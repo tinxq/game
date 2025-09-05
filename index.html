@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEVENTEEN Games</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <div class="cards-container" id="homePage">
+    <div class="card">
+      <h2>School Edition</h2>
+      <button onclick="showGame('schoolGame')">Play Now</button>
+    </div>
+    <div class="card">
+      <h2>Party Edition</h2>
+      <button onclick="showGame('partyGame')">Play Now</button>
+    </div>
+    <div class="card">
+      <h2>College Edition</h2>
+      <button onclick="showGame('collegeGame')">Play Now</button>
+    </div>
+  </div>
+
+
+  <div id="schoolGame" class="game-page hidden">
+    <h1> School Edition </h1>
+    <p class="question" id="schoolQuestion"></p>
+    <div id="schoolImage"></div>
+    <div class="buttons">
+    <button onclick="nextSchool()">Next</button>
+    <button onclick="pickSchool()">Pick</button>
+    <button onclick="replaySchool()">Replay</button>
+    <button onclick="backHome()">Back</button>
+  </div>
+  </div>
+
+
+  <div id="partyGame" class="game-page hidden">
+    <h1> Party Edition </h1>
+    <p class="question" id="partyQuestion"></p>
+    <div id="partyImage"></div>
+     <div class="buttons">
+    <button onclick="nextParty()">Next</button>
+    <button onclick="pickParty()">Pick</button>
+    <button onclick="replayParty()">Replay</button>
+    <button onclick="backHome()">Back</button>
+  </div>
+  </div>
+
+
+  <div id="collegeGame" class="game-page hidden">
+    <h1>College Edition </h1>
+    <p class="question" id="collegeQuestion"></p>
+    <div id="collegeImage"></div>
+    <div class="buttons">
+    <button onclick="nextCollege()">Next</button>
+    <button onclick="pickCollege()">Pick</button>
+    <button onclick="replayCollege()">Replay</button>
+    <button onclick="backHome()">Back</button>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
