@@ -34,7 +34,8 @@ body {
   padding: 5px 10px;
   width: auto;
   font-size: 12px;
-   background: #ff80b3;
+   background: #ff80b3; 
+  color : black; 
    border-radius: 5px;
    font-family: "Press Start 2P", cursive;
 
